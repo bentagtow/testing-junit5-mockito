@@ -1,17 +1,15 @@
 package guru.springframework.sfgpetclinic;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Map;
 
-public class AnnotationMocksTest {
-    @BeforeEach
-    void setUp(){
-        MockitoAnnotations.openMocks(this);
-    }
+@ExtendWith(MockitoExtension.class)
+public class JUnitMocksTest {
+
     @Mock
     Map<String, Object> mapMock;
 
